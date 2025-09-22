@@ -284,3 +284,32 @@ a:hover {
     border-radius: 6px;
   }
 }
+
+/*
+Các hiệu ứng đã sử dụng trong file này:
+
+1. transition:
+   - section: transition: box-shadow 0.25s;
+   - .avatar: transition: transform 0.25s, box-shadow 0.25s;
+   - .hobby: transition: transform 0.22s, box-shadow 0.22s, background 0.22s;
+   - a: transition: color 0.22s, text-shadow 0.22s, background 0.22s, box-shadow 0.22s;
+
+2. hover:
+   - .avatar:hover: scale, rotate, box-shadow lớn hơn
+   - .hobby:hover: translateY, scale, background, box-shadow lớn hơn
+   - a:hover: đổi màu nền, màu chữ, text-shadow, box-shadow, scale nhẹ, translateY
+
+3. box-shadow:
+   - section, .avatar, .hobby, a, .icon: tạo hiệu ứng nổi khối (card, nút, ảnh)
+
+4. background gradient:
+   - body, section.intro, section.hobbies, section.links, a:hover: hiệu ứng chuyển màu nền
+
+5. object-fit:
+   - .avatar, .hobby img, a .icon: đảm bảo ảnh luôn vừa khung, không méo
+
+6. responsive:
+   - @media queries: thay đổi kích thước, padding, border-radius, font-size, v.v. theo kích thước màn hình
+
+Tất cả hiệu ứng này giúp giao diện mượt mà, hiện đại, nổi bật và thân thiện trên mọi thiết bị.
+*/
